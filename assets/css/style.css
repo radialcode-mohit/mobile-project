@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none  !important;
+    text-decoration: none !important;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+.w-70{
+    width: 70%;
+}
+.w-30{
+    width: 30%;
+}
+.fs_folowers{
+    font-size: 20px;
+}
+.hover_underline{
+     position: relative;
+}
+.hover_underline::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;left: 50%;
+    transform: translateX(-50%);bottom: -10px;
+    background-color: aqua;margin: auto;
+}
+.hover_underline:hover::before{
+
+    width: 50px;
+   
+}
+.startupbtn{
+    color: yellow;
+    background-color: rgba(128, 128, 128, 0.642);
+}
+.back-btn {
+    max-height: 30px;
+    max-width: 30px;
+}
+.logo-edit{
+    border-radius: 100%;
+    background-color: white;
+    
+    max-width: 112px;max-height: 120px;
+    padding: 10px;
+}
+.folowers-box{
+    max-width: 100%;
+}
+.font-size-xl{
+    font-size: 25px;
+}
+@media (min-width:575.98px) {
+    .back-btn {
+        max-height: 50px;
+        max-width: 50px;
+    }
+  .fs_folowers{
+    font-size: 28px;
+}
+    .logo-edit{
+        border-radius: 100%;
+        
+        max-width: 135px;
+        padding: 10px;
+    }
+    .font-size-xl{
+        font-size: 40px;
+    }
+}
+@media (min-width:991.98px) {
+    .folowers-box{
+        max-width: 70%;
+    }
+}
